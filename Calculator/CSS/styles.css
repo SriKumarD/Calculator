@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(83, 199, 193);
+}
+button span
+{
+    font-size: 20px;
+}
+.btn {
+    border: solid black 4px;
+    border-style: double;
+}
+input{
+    width:100%;
+    text-align: center;
+    border: solid black 4px;
+    border-style: double;
+    border-radius: 0.3rem;
+    width: 100%;
+    padding: 9px;
+    margin: 0px;
+}
+.bg-orange
+{
+    background-color: orange;
+}
+.card
+{
+    background-color: rgb(205, 209, 214);
+}

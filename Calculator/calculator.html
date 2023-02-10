@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="./CSS/bootstrap.css">
+   <link rel="stylesheet" href="./CSS/styles.css">
+   <script src="./calculator.js"></script>
+</head>
+<body>
+    <div class="container mt-5 ">
+        <div class="row justify-content-center">
+            <div class="card col-md-6">
+                    <h1 class="text-center">CALCULATOR</h1>
+                <div class="card-body rounded">
+                    <table  class="table table-bordered" >
+                        <thead>
+                            <tr>
+                                <td class="text-center p-0"colspan="4">
+                                    <input type="text" class="bg-dark text-white font-weight-bold" value="" id="display" disabled/>
+                                </td> 
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-light" value="1" onclick="display('1')"><span class="">1</span></button>
+                                </td>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-light" value="2" onclick="display('2',)"><span class="">2</span></button>
+                                </td>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-light" value="3" onclick="display('3')"><span class="">3</span></button>
+                                </td>
+                                <td colspan="1" class="text-center p-0" width="10%">
+                                    <button type="button" class="btn btn-block btn-dark" onclick="cl()"><span class="">AC</span></button>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-light" value="4" onclick="display('4')"><span class="">4</span></button>
+                                </td>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-light" value="5" onclick="display('5')"><span class="">5</span></button>
+                                </td>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-light" value="6" onclick="display('6')"><span class="">6</span></button>
+                                </td>
+                                <td colspan="1" class="text-center p-0" width="10%">
+                                    <button type="button" id="sum" class="btn btn-block btn-secondary" value="+" onclick="display('+','sum')"><span class="">+</span></button>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-light" value="7" onclick="display('7')"><span class="">7</span></button>
+                                </td>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-light" value="8" onclick="display('8')"><span class="">8</span></button>
+                                </td>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-light" value="9" onclick="display('9')"><span class="">9</span></button>
+                                </td>
+                                <td colspan="1" class="text-center p-0" width="10%">
+                                    <button type="button" class="btn btn-block btn-secondary" id="sub" value="-" onclick="display('-','sub')"><span class="">-</span></button>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-light" value="(" onclick="display('(')"><span class="">(</span></button>
+                                </td>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-light" value="0" onclick="display('0')"><span class="">0</span></button>
+                                </td>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-light" value=")" onclick="display(')')"><span class="">)</span></button>
+                                </td>
+                                <td colspan="1" class="text-center p-0" width="10%">
+                                    <button type="button" class="btn btn-block btn-secondary" id="mul" value="*" onclick="display('*','mul')"><span class="">*</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center p-0" width="20%">
+                                    <button id="tan" type="button" class="btn btn-block btn-secondary" value="tan" onclick="display('tan(')"><span class="">tan</span></button>
+                                </td>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class="btn btn-block btn-secondary" value="sin" onclick="display('sin(')"><span class="">sin</span></button>
+                                </td>
+                                <td class="text-center p-0" width="20%">
+                                    <button id="tan" type="button" class="btn btn-block btn-secondary" value="tan" onclick="display('cos(')"><span class="">cos</span></button>
+                                </td>
+                                <td colspan="1" class="text-center p-0" width="10%">
+                                    <button type="button" class="btn btn-block btn-secondary" id="divd" onclick="display('/','divd')"><span class="" >/</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                               
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class=" btn btn-block btn-secondary" onclick="display('sqrt(')"><span class="">sqrt</span></button>
+                                </td>
+                                <td colspan="1" class="text-center p-0" width="10%">
+                                    <button type="button" id="pow" class="btn btn-block btn-secondary" value="^" onclick="display('**','pow')"><span class="">power</span></button>
+                                </td>
+                                <td class="text-center p-0" width="20%">
+                                    <button type="button" class=" btn btn-block btn-secondary" id="dot" onclick="display('.','dot')"><span class="">.</span></button>
+                                </td>
+                                <td colspan="1" class="text-center p-0" width="10%">
+                                    
+                                    <button type="button" class="btn btn-block btn-dark"  onclick="back()"><span class="text-danger h4">X</span></button>
+                                </td>  
+                            </tr>
+                                
+                            </tr>
+                            <tr>
+                                
+                                <td colspan="4" class="text-center p-0" width="10%">
+                                    <button id='cal' class="btn btn-block text-center bg-orange" onclick="calculation()" disabled="true"><span>Calculate</span></button>
+                                </td>
+                                
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
